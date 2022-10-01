@@ -10,3 +10,15 @@ while True:
     else:
         break
 print(numbers)
+
+numbers.sort()
+isEven = len(numbers) % 2
+middle = len(numbers) // 2
+
+if isEven == 0:
+    middleValueOne = numbers[middle - 1]
+    middleValueTwo = numbers[middle]
+    median = (middleValueOne + middleValueTwo) / 2
+    print(median)
+else:
+    print(numbers[middle])
